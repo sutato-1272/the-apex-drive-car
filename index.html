@@ -22,8 +22,19 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030303; color: #ffffff; overflow-x: hidden; }
         h1, h2, h3, h4, .brand-font { font-family: 'Space Grotesk', sans-serif; }
 
-        .text-outline { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2); color: transparent; transition: all 0.5s ease; }
-        .group:hover .text-outline { -webkit-text-stroke: 1px #FBBF24; color: rgba(251, 191, 36, 0.1); }
+        /* TYPOGRAPHY GOLD EFFECT (BOOSTED) */
+        .text-outline {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+            color: transparent;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        /* Saat parent group di-hover, efek emas menyala */
+        .group:hover .text-outline {
+            -webkit-text-stroke: 2px #FBBF24; /* Outline Emas Lebih Tebal */
+            color: rgba(251, 191, 36, 0.1); /* Isi sedikit warna emas transparan */
+            filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.6)); /* EFEK GLOW EMAS */
+            letter-spacing: 0.05em; /* Sedikit melebar agar dramatis */
+        }
 
         .glass-panel {
             background: rgba(255, 255, 255, 0.03);
@@ -129,7 +140,8 @@
             <div class="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/70 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-[#030303] via-transparent to-[#030303]"></div>
         </div>
-        <div class="relative z-10 text-center max-w-7xl mx-auto px-4 mt-10 md:mt-0">
+        
+        <div class="relative z-10 text-center max-w-7xl mx-auto px-4 mt-10 md:mt-0 group">
             <h1 class="text-[3.5rem] md:text-[9rem] font-black uppercase tracking-tighter leading-[0.9] mb-6 mix-blend-screen" data-aos="fade-up">
                 Drive The <br>
                 <span class="text-outline">Impossible</span>
