@@ -7,7 +7,6 @@
     
     <title>The Apex Drive | Sewa Mobil Mewah & Sport Car Premium</title>
     <meta name="description" content="Sewa mobil sport & luxury car terbaik. Katalog lengkap: Porsche, Ferrari, Alphard, Rubicon. Booking mudah via WhatsApp.">
-    <meta name="author" content="The Apex Drive">
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏎️</text></svg>">
 
@@ -35,9 +34,8 @@
         }
 
         .glass-modal {
-            background: rgba(10, 10, 10, 0.9);
+            background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
@@ -46,16 +44,17 @@
         }
         .input-field:focus { outline: none; border-color: #FBBF24; background: rgba(255, 255, 255, 0.1); }
 
+        /* Fallback background if image fails */
+        .img-placeholder { background-color: #1a1a1a; }
+
         .bg-noise {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 50; opacity: 0.04;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
         }
 
-        /* Swiper Custom Pagination */
         .swiper-pagination-bullet { background: white; opacity: 0.5; }
         .swiper-pagination-bullet-active { background: #EAB308; opacity: 1; }
         
-        /* Map & Scrollbar */
         .map-container iframe { filter: grayscale(100%) invert(92%) contrast(83%); border-radius: 1rem; }
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #000; }
@@ -67,15 +66,13 @@
     <div class="bg-noise"></div>
 
     <div id="bookingModal" class="fixed inset-0 z-[200] hidden flex items-center justify-center p-4">
-        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="toggleModal()"></div>
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-sm" onclick="toggleModal()"></div>
         <div class="glass-modal relative w-full max-w-md rounded-2xl p-6 md:p-8 shadow-2xl transform transition-all scale-100 opacity-100" data-aos="zoom-in">
             <button onclick="toggleModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition"><i class="fa-solid fa-xmark text-2xl"></i></button>
-
             <div class="text-center mb-6">
                 <h3 class="text-2xl font-black brand-font mb-1">RESERVASI UNIT</h3>
                 <p class="text-xs text-yellow-500 tracking-widest uppercase">The Apex Drive VIP</p>
             </div>
-
             <form onsubmit="sendToWhatsapp(event)" class="space-y-4">
                 <div>
                     <label class="block text-xs font-bold text-gray-400 mb-1 ml-1">NAMA LENGKAP</label>
@@ -87,10 +84,10 @@
                         <option value="General Request">Pilih Manual...</option>
                         <option value="Porsche 911 GT3">Porsche 911 GT3</option>
                         <option value="Ferrari 488 Pista">Ferrari 488 Pista</option>
-                        <option value="Alphard VIP Transformer">Alphard VIP Transformer</option>
-                        <option value="Rubicon Wrangler">Jeep Rubicon Wrangler</option>
-                        <option value="BMW i7 Electric">BMW i7 Electric</option>
-                        <option value="Mercedes G-Wagon">Mercedes G-Wagon</option>
+                        <option value="Alphard VIP">Alphard VIP Transformer</option>
+                        <option value="Jeep Rubicon">Jeep Rubicon Wrangler</option>
+                        <option value="BMW 7 Series">BMW 7 Series</option>
+                        <option value="Mercedes G-Class">Mercedes G-Class</option>
                     </select>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
@@ -132,9 +129,11 @@
     </nav>
 
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=2070&auto=format&fit=crop" 
-                 class="w-full h-full object-cover object-[70%] md:object-center opacity-50 scale-105" alt="Luxury Car">
+        <div class="absolute inset-0 z-0 img-placeholder">
+            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1920&auto=format&fit=crop" 
+                 class="w-full h-full object-cover object-[70%] md:object-center opacity-50 scale-105" 
+                 alt="Luxury Car"
+                 onerror="this.src='https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1920'">
             <div class="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/70 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-[#030303] via-transparent to-[#030303]"></div>
         </div>
@@ -158,7 +157,7 @@
         <div class="max-w-7xl mx-auto px-4 mb-10 flex justify-between items-end">
             <div>
                 <h2 class="text-3xl md:text-5xl font-black text-white mb-2">OUR FLEET</h2>
-                <p class="text-gray-400 text-sm md:text-base">Geser untuk melihat koleksi terbaru (Swipe &rarr;)</p>
+                <p class="text-gray-400 text-sm md:text-base">Geser untuk melihat koleksi (Swipe →)</p>
             </div>
             <div class="hidden md:flex gap-2">
                 <button class="swiper-button-prev-custom w-12 h-12 rounded-full border border-white/20 hover:bg-yellow-500 hover:text-black flex items-center justify-center transition"><i class="fa-solid fa-arrow-left"></i></button>
@@ -170,8 +169,8 @@
             <div class="swiper-wrapper pb-12">
                 
                 <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('Porsche 911 GT3')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50">
-                        <img src="https://images.unsplash.com/photo-1503376763036-066120622c74?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
+                    <div onclick="toggleModal('Porsche 911 GT3')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50 img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1503376763036-066120622c74?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
                         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <span class="bg-yellow-500 text-black text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">BEST SELLER</span>
@@ -185,14 +184,14 @@
                 </div>
 
                 <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('Alphard VIP Transformer')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50">
-                        <img src="https://images.unsplash.com/photo-1621213320152-454559b321a4?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
+                    <div onclick="toggleModal('Alphard VIP')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50 img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1609520505218-7421da4c3c7c?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
                         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <span class="bg-blue-500 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">VIP CHOICE</span>
-                            <h3 class="text-2xl font-bold mb-1">Alphard Transformer</h3>
+                            <h3 class="text-2xl font-bold mb-1">Alphard VIP</h3>
                             <div class="flex justify-between items-end">
-                                <p class="text-gray-400 text-xs">Luxury MPV • 7 Seater • Massage</p>
+                                <p class="text-gray-400 text-xs">Pilot Seat • Massage • Netflix</p>
                                 <span class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
                             </div>
                         </div>
@@ -200,8 +199,8 @@
                 </div>
 
                 <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('Rubicon Wrangler')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50">
-                        <img src="https://images.unsplash.com/photo-1563720223523-491ff04651de?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
+                    <div onclick="toggleModal('Jeep Rubicon')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50 img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
                         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <span class="bg-green-600 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">ADVENTURE</span>
@@ -215,14 +214,14 @@
                 </div>
 
                 <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('Ferrari 488 Pista')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50">
-                        <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
+                    <div onclick="toggleModal('Ferrari 488 Pista')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50 img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
                         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <span class="bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">SUPERCAR</span>
-                            <h3 class="text-2xl font-bold mb-1">Ferrari 488 Pista</h3>
+                            <h3 class="text-2xl font-bold mb-1">Ferrari 488</h3>
                             <div class="flex justify-between items-end">
-                                <p class="text-gray-400 text-xs">V8 Turbo • 0-100 2.8s • Red</p>
+                                <p class="text-gray-400 text-xs">V8 Turbo • Red Corsa • Fast</p>
                                 <span class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
                             </div>
                         </div>
@@ -230,14 +229,14 @@
                 </div>
 
                 <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('BMW i7 Electric')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50">
-                        <img src="https://images.unsplash.com/photo-1555215695-3004980adade?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
+                    <div onclick="toggleModal('BMW 7 Series')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50 img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980adade?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
                         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
-                            <span class="bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">ELECTRIC LUXURY</span>
-                            <h3 class="text-2xl font-bold mb-1">BMW i7</h3>
+                            <span class="bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">EXECUTIVE</span>
+                            <h3 class="text-2xl font-bold mb-1">BMW 7 Series</h3>
                             <div class="flex justify-between items-end">
-                                <p class="text-gray-400 text-xs">EV • Theater Screen • Silent</p>
+                                <p class="text-gray-400 text-xs">Sedan • Comfort • Silent</p>
                                 <span class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
                             </div>
                         </div>
@@ -245,14 +244,14 @@
                 </div>
 
                 <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('Mercedes G-Wagon')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50">
-                        <img src="https://images.unsplash.com/photo-1520031441872-dd5996434771?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
+                    <div onclick="toggleModal('Mercedes G-Class')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50 img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1520031441872-dd5996434771?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70">
                         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
-                            <span class="bg-gray-600 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">STATUS SYMBOL</span>
-                            <h3 class="text-2xl font-bold mb-1">G-Wagon AMG</h3>
+                            <span class="bg-gray-600 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">LUXURY SUV</span>
+                            <h3 class="text-2xl font-bold mb-1">G-Class AMG</h3>
                             <div class="flex justify-between items-end">
-                                <p class="text-gray-400 text-xs">V8 • Black on Black • Gangster</p>
+                                <p class="text-gray-400 text-xs">V8 • Black • Status Symbol</p>
                                 <span class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
                             </div>
                         </div>
@@ -325,7 +324,7 @@
             </div>
         </div>
         <div class="border-t border-white/5 pt-8 text-center text-gray-600 text-sm">
-            <p>© 2026 The Apex Drive.</p>
+            <p>© 2026 The Apex Drive. Powered by <a href="#" class="text-gray-500 hover:text-white transition">CiledugPromo Network</a>.</p>
         </div>
     </footer>
 
@@ -334,50 +333,26 @@
     <script>
         AOS.init({ duration: 800, once: true, offset: 50, disable: 'mobile' });
 
-        // SWIPER INIT (CONFIG CAROUSEL)
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1.2, // Di HP muncul 1 full + sedikit mobil berikutnya (peek)
+            slidesPerView: 1.2,
             spaceBetween: 20,
             centeredSlides: false,
             loop: true,
             grabCursor: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next-custom",
-                prevEl: ".swiper-button-prev-custom",
-            },
+            autoplay: { delay: 3000, disableOnInteraction: false },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next-custom", prevEl: ".swiper-button-prev-custom" },
             breakpoints: {
-                640: {
-                    slidesPerView: 2.2, // Tablet
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 3.2, // Laptop
-                    spaceBetween: 30,
-                },
-                1280: {
-                    slidesPerView: 4, // Desktop Lebar
-                    spaceBetween: 30,
-                },
+                640: { slidesPerView: 2.2, spaceBetween: 20 },
+                1024: { slidesPerView: 3.2, spaceBetween: 30 },
+                1280: { slidesPerView: 4, spaceBetween: 30 },
             },
         });
 
-        // SMART BOOKING LOGIC (AUTO FILL)
         function toggleModal(unitName = '') {
             const modal = document.getElementById('bookingModal');
-            const selectUnit = document.getElementById('unit');
+            if (unitName) document.getElementById('unit').value = unitName;
             
-            if (unitName) {
-                selectUnit.value = unitName;
-            }
-
             if (modal.classList.contains('hidden')) {
                 modal.classList.remove('hidden');
                 document.body.style.overflow = 'hidden';
