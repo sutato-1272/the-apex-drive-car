@@ -6,10 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <title>The Apex Drive | Sewa Mobil Mewah & Sport Car Premium</title>
-    <meta name="title" content="The Apex Drive | Sewa Mobil Mewah & Sport Car Premium">
-    <meta name="description" content="Rasakan sensasi berkendara tak terbatas. Sewa Porsche, Ferrari, Alphard VIP, dan luxury car lainnya. Layanan 24 jam untuk eksekutif dan wedding.">
+    <meta name="title" content="The Apex Drive | Sewa Mobil Mewah & Sport Car Premium Jakarta">
+    <meta name="description" content="Sewa mobil sport & luxury car terbaik di Jakarta. Porsche 911, Ferrari, Alphard VIP. Lepas kunci atau dengan chauffeur profesional. Booking 24/7.">
+    <meta name="keywords" content="sewa mobil mewah jakarta, rental alphard vip, sewa porsche lepas kunci, rental mobil sport, the apex drive">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="The Apex Drive">
     
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ciledugpromo.biz.id/the-apex-drive">
+    <meta property="og:title" content="The Apex Drive | Drive The Impossible">
+    <meta property="og:description" content="Premium Luxury Car Rental. Armada eksklusif untuk pengalaman tak terlupakan.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1200">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="The Apex Drive | Drive The Impossible">
+    <meta property="twitter:description" content="Premium Luxury Car Rental. Armada eksklusif untuk pengalaman tak terlupakan.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1200">
+
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏎️</text></svg>">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRental",
+      "name": "The Apex Drive",
+      "image": "https://images.unsplash.com/photo-1617788138017-80ad40651399",
+      "description": "Penyedia jasa sewa mobil mewah dan sport car premium.",
+      "url": "https://ciledugpromo.biz.id/the-apex-drive",
+      "telephone": "+6285283212205",
+      "priceRange": "$$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Ciledug Raya",
+        "addressLocality": "Tangerang",
+        "addressRegion": "Banten",
+        "postalCode": "15151",
+        "addressCountry": "ID"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +65,7 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030303; color: #ffffff; overflow-x: hidden; }
         h1, h2, h3, h4, .brand-font { font-family: 'Space Grotesk', sans-serif; }
 
-        /* Premium Text Outline Effect */
+        /* Typography "DRIVE THE IMPOSSIBLE" Effect */
         .text-outline {
             -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
             color: transparent;
@@ -33,30 +76,23 @@
             color: rgba(251, 191, 36, 0.1);
         }
 
-        /* Glassmorphism Level 2 (Cleaner) */
+        /* Glassmorphism Logic */
         .glass-panel {
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
         }
 
-        /* Noise Texture Overlay (Kesan Mahal) */
+        /* Noise Texture Overlay (Premium Detail) */
         .bg-noise {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            pointer-events: none;
-            z-index: 50;
-            opacity: 0.03;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 50; opacity: 0.04;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
         }
 
-        /* Map Grayscale & Dark Mode */
-        .map-container iframe {
-            filter: grayscale(100%) invert(92%) contrast(83%);
-            border-radius: 1rem;
-        }
+        /* Map Grayscale */
+        .map-container iframe { filter: grayscale(100%) invert(92%) contrast(83%); border-radius: 1rem; }
 
         /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 6px; }
@@ -69,17 +105,17 @@
 
     <div class="bg-noise"></div>
 
-    <a href="https://wa.me/6285283212205?text=Halo%20The%20Apex%20Drive,%20saya%20tertarik%20booking%20unit%20premium." 
-       class="fixed bottom-8 right-8 z-[100] group flex items-center justify-end">
+    <a href="https://wa.me/6285283212205?text=Halo%20The%20Apex%20Drive,%20saya%20tertarik%20sewa%20mobil%20premium." 
+       class="fixed bottom-6 right-6 z-[100] group flex items-center justify-end">
         <div class="bg-green-500 hover:bg-green-400 text-white rounded-full p-4 shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all duration-300 transform hover:scale-110 flex items-center justify-center">
             <i class="fa-brands fa-whatsapp text-3xl animate-pulse"></i>
         </div>
-        <span class="absolute right-20 bg-white text-black font-bold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-lg text-sm">
+        <span class="absolute right-20 bg-white text-black font-bold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-lg text-sm hidden md:block">
             Chat Official
         </span>
     </a>
 
-    <nav class="fixed w-full z-40 top-0 start-0 border-b border-white/5 bg-black/70 backdrop-blur-xl">
+    <nav class="fixed w-full z-40 top-0 start-0 border-b border-white/5 bg-black/80 backdrop-blur-xl">
         <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-8">
             <a href="#" class="flex items-center gap-2">
                 <span class="text-2xl font-black tracking-tighter text-white brand-font">APEX<span class="text-yellow-500">.</span>DRIVE</span>
@@ -95,85 +131,87 @@
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=2070&auto=format&fit=crop" 
-                 class="w-full h-full object-cover opacity-40 scale-110" alt="Luxury Car Background">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/80 to-transparent"></div>
+                 class="w-full h-full object-cover object-[70%] md:object-center opacity-50 scale-105" alt="Luxury Car Background">
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/70 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-[#030303] via-transparent to-[#030303]"></div>
         </div>
 
-        <div class="relative z-10 text-center max-w-7xl mx-auto px-4 group">
+        <div class="relative z-10 text-center max-w-7xl mx-auto px-4 group mt-10 md:mt-0">
             <div class="inline-block px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-6" data-aos="fade-down">
-                <span class="text-xs font-bold tracking-[0.2em] text-yellow-500 uppercase">Premium Car Rental Agency</span>
+                <span class="text-[10px] md:text-xs font-bold tracking-[0.2em] text-yellow-500 uppercase">Premium Car Rental Agency</span>
             </div>
             
-            <h1 class="text-6xl md:text-[9rem] font-black uppercase tracking-tighter leading-[0.9] mb-6 mix-blend-screen" data-aos="fade-up">
+            <h1 class="text-[3.5rem] md:text-[9rem] font-black uppercase tracking-tighter leading-[0.9] mb-6 mix-blend-screen" data-aos="fade-up">
                 Drive The <br>
                 <span class="text-outline">Impossible</span>
             </h1>
             
-            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 font-light leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-                Penyedia armada <span class="text-white font-medium">Supercar & Luxury MPV</span> terpercaya. 
+            <p class="text-base md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed px-4" data-aos="fade-up" data-aos-delay="200">
+                Akses eksklusif ke armada <span class="text-white font-medium">Supercar & Luxury MPV</span>. 
                 Unit bersih, wangi, dan driver berstandar protokol VIP.
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center px-4" data-aos="fade-up" data-aos-delay="300">
                 <a href="https://wa.me/6285283212205" class="w-full sm:w-auto px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg rounded-full transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(234,179,8,0.4)]">
-                    Booking Unit
+                    Booking Sekarang
                 </a>
                 <a href="#features" class="w-full sm:w-auto px-8 py-4 border border-white/20 hover:bg-white/10 text-white font-medium text-lg rounded-full transition-all backdrop-blur-sm">
-                    Kenapa Kami?
+                    Lihat Koleksi
                 </a>
             </div>
         </div>
         
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <i class="fa-solid fa-arrow-down-long text-white/30 text-xl"></i>
         </div>
     </section>
 
-    <section id="features" class="py-24 relative bg-[#030303]">
+    <section id="features" class="py-20 md:py-24 relative bg-[#030303]">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[600px]">
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4">
                 
-                <div class="md:col-span-2 md:row-span-2 glass-panel rounded-3xl relative overflow-hidden group cursor-pointer" data-aos="fade-right">
+                <div class="min-h-[400px] md:min-h-auto md:col-span-2 md:row-span-2 glass-panel rounded-3xl relative overflow-hidden group cursor-pointer" data-aos="fade-right">
                     <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?q=80&w=1000&auto=format&fit=crop" 
                          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" alt="Porsche Interior">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
-                    <div class="absolute bottom-8 left-8 p-4">
-                        <div class="bg-yellow-500 text-black text-xs font-bold px-2 py-1 inline-block rounded mb-2">HOT ITEM</div>
-                        <h3 class="text-3xl font-bold mb-2">Porsche 911 & GT3</h3>
-                        <p class="text-gray-400 text-sm line-clamp-2">Rasakan adrenalin mobil sport Eropa terbaik. Tersedia lepas kunci dengan syarat mudah.</p>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 md:bottom-8 md:left-8 p-2">
+                        <div class="bg-yellow-500 text-black text-[10px] font-bold px-2 py-1 inline-block rounded mb-2">HOT ITEM</div>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-2">Porsche 911 & GT3</h3>
+                        <p class="text-gray-300 text-sm line-clamp-2 md:line-clamp-none pr-4">Rasakan adrenalin mobil sport Eropa terbaik. Tersedia lepas kunci (Self-Drive).</p>
                     </div>
                 </div>
 
-                <div class="md:col-span-1 md:row-span-1 glass-panel rounded-3xl p-6 flex flex-col justify-between relative overflow-hidden group hover:border-yellow-500/50 transition-colors" data-aos="fade-down" data-aos-delay="100">
-                     <img src="https://images.unsplash.com/photo-1647425170366-02e0df40a6b5?q=80&w=800&auto=format&fit=crop" 
+                <div class="min-h-[250px] md:col-span-1 md:row-span-1 glass-panel rounded-3xl p-6 flex flex-col justify-between relative overflow-hidden group hover:border-yellow-500/50 transition-colors" data-aos="fade-down" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1647425170366-02e0df40a6b5?q=80&w=800&auto=format&fit=crop" 
                     class="absolute inset-0 w-full h-full object-cover opacity-40 transition-transform duration-500 group-hover:scale-105" alt="Alphard Interior">
-                    <div class="relative z-10">
-                        <i class="fa-solid fa-crown text-3xl text-yellow-500 mb-2"></i>
-                        <h3 class="text-xl font-bold">Alphard VIP</h3>
+                    <div class="relative z-10 mt-auto md:mt-0">
+                        <i class="fa-solid fa-crown text-3xl text-yellow-500 mb-2 drop-shadow-md"></i>
+                        <h3 class="text-xl font-bold drop-shadow-md">Alphard VIP</h3>
+                        <p class="text-xs text-gray-300 mt-1 md:hidden">Kenyamanan Eksekutif.</p>
                     </div>
                 </div>
 
-                <div class="md:col-span-1 md:row-span-1 glass-panel rounded-3xl p-6 flex flex-col justify-center items-center text-center hover:bg-white/5 transition" data-aos="fade-down" data-aos-delay="200">
-                    <div class="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-4">
+                <div class="min-h-[180px] md:min-h-auto md:col-span-1 md:row-span-1 glass-panel rounded-3xl p-6 flex flex-col justify-center items-center text-center hover:bg-white/5 transition" data-aos="fade-down" data-aos-delay="200">
+                    <div class="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-4">
                         <i class="fa-solid fa-headset text-2xl text-white"></i>
                     </div>
                     <h3 class="text-lg font-bold">24/7 Priority</h3>
                     <p class="text-gray-500 text-xs mt-2">Bantuan darurat & penggantian unit cepat.</p>
                 </div>
 
-                <div class="md:col-span-2 md:row-span-1 glass-panel rounded-3xl p-8 flex items-center justify-between bg-zinc-900/50" data-aos="fade-up" data-aos-delay="300">
+                <div class="min-h-[150px] md:min-h-auto md:col-span-2 md:row-span-1 glass-panel rounded-3xl p-6 md:p-8 flex items-center justify-between bg-zinc-900/50" data-aos="fade-up" data-aos-delay="300">
                     <div>
-                        <h3 class="text-4xl font-black text-white">100+</h3>
-                        <p class="text-gray-500 text-sm uppercase tracking-widest">Unit Ready</p>
+                        <h3 class="text-3xl md:text-4xl font-black text-white">100+</h3>
+                        <p class="text-gray-500 text-[10px] md:text-sm uppercase tracking-widest">Unit Ready</p>
                     </div>
-                    <div class="h-12 w-px bg-white/10"></div>
+                    <div class="h-10 w-px bg-white/10"></div>
                     <div>
-                        <h3 class="text-4xl font-black text-white">0%</h3>
-                        <p class="text-gray-500 text-sm uppercase tracking-widest">Cancel Rate</p>
+                        <h3 class="text-3xl md:text-4xl font-black text-white">100%</h3>
+                        <p class="text-gray-500 text-[10px] md:text-sm uppercase tracking-widest">Satisfaction</p>
                     </div>
                     <div class="hidden sm:block text-right">
-                        <p class="text-sm text-gray-400">Melayani Area:<br> <span class="text-white font-bold">Jabodetabek & Bandung</span></p>
+                        <p class="text-sm text-gray-400">Area:<br> <span class="text-white font-bold">Jabodetabek</span></p>
                     </div>
                 </div>
 
@@ -186,18 +224,20 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white">Trusted by Professionals</h2>
             
             <div class="glass-panel p-8 md:p-12 rounded-2xl relative border-t border-white/10">
-                <i class="fa-solid fa-quote-left text-6xl text-white/5 absolute top-6 left-6"></i>
+                <i class="fa-solid fa-quote-left text-4xl md:text-6xl text-white/5 absolute top-6 left-6"></i>
                 <div class="relative z-10">
-                    <div class="flex justify-center mb-6 text-yellow-500 gap-1">
+                    <div class="flex justify-center mb-6 text-yellow-500 gap-1 text-sm">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="text-xl md:text-2xl italic text-gray-300 mb-8 leading-relaxed font-light">
-                        "Sewa Alphard Transformer untuk tamu VIP kantor. Unitnya sangat bersih, tidak bau rokok, dan driver (Pak Budi) sangat paham jalan tikus Jakarta. Next pasti order lagi."
+                    <p class="text-lg md:text-2xl italic text-gray-300 mb-8 leading-relaxed font-light">
+                        "Saya sewa Alphard Transformer untuk tamu VIP kantor. Unitnya sangat bersih, tidak bau rokok, dan driver (Pak Budi) sangat profesional & paham rute Jakarta."
                     </p>
                     <div class="flex items-center justify-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop" class="w-12 h-12 rounded-full border-2 border-white/20" alt="Client">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 overflow-hidden border-2 border-white/20">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop" class="w-full h-full object-cover" alt="Client">
+                        </div>
                         <div class="text-left">
-                            <h4 class="font-bold text-white text-lg">Hendra Gunawan</h4>
+                            <h4 class="font-bold text-white text-base">Hendra Gunawan</h4>
                             <p class="text-xs text-gray-500 uppercase tracking-wide">Procurement Manager</p>
                         </div>
                     </div>
@@ -207,11 +247,11 @@
     </section>
 
     <section class="py-20 px-4 max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Pertanyaan Umum</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Pertanyaan Umum</h2>
         <div class="space-y-4">
             <details class="group glass-panel rounded-xl overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 hover:bg-white/5 transition">
-                    <span>Apakah bisa sewa lepas kunci (Self-Drive)?</span>
+                    <span class="text-sm md:text-base">Apakah bisa sewa lepas kunci (Self-Drive)?</span>
                     <span class="transition group-open:rotate-180 text-yellow-500">
                         <i class="fa-solid fa-chevron-down"></i>
                     </span>
@@ -222,7 +262,7 @@
             </details>
             <details class="group glass-panel rounded-xl overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 hover:bg-white/5 transition">
-                    <span>Metode pembayaran apa saja?</span>
+                    <span class="text-sm md:text-base">Metode pembayaran apa saja?</span>
                     <span class="transition group-open:rotate-180 text-yellow-500">
                         <i class="fa-solid fa-chevron-down"></i>
                     </span>
@@ -238,18 +278,22 @@
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
                 <h2 class="text-4xl font-black mb-6 tracking-tighter">APEX<span class="text-yellow-500">.</span>DRIVE</h2>
-                <p class="text-gray-400 mb-8 max-w-sm leading-relaxed">
+                <p class="text-gray-400 mb-8 max-w-sm leading-relaxed text-sm">
                     Kami bukan sekadar rental mobil. Kami adalah partner gaya hidup dan kesuksesan bisnis Anda. Armada premium, pelayanan bintang lima.
                 </p>
                 
-                <div class="space-y-3">
+                <div class="space-y-4">
                     <div class="flex items-center gap-3 text-gray-300">
-                        <i class="fa-solid fa-location-dot text-yellow-500 w-6"></i>
-                        <span>Ciledug Raya, Tangerang & Jakarta Selatan</span>
+                        <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-yellow-500">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="text-sm">Ciledug Raya, Tangerang & Jakarta Selatan</span>
                     </div>
                     <div class="flex items-center gap-3 text-gray-300">
-                        <i class="fa-solid fa-phone text-yellow-500 w-6"></i>
-                        <span>+62 852-8321-2205 (24 Jam)</span>
+                        <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-yellow-500">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span class="text-sm">+62 852-8321-2205 (24 Jam)</span>
                     </div>
                 </div>
             </div>
@@ -267,7 +311,7 @@
             <p class="text-gray-600 text-sm">© 2026 The Apex Drive. Part of <a href="https://ciledugpromo.biz.id/jasalandingpage" class="text-gray-500 hover:text-white transition">CiledugPromo Network</a>.</p>
             <div class="flex gap-6 text-sm font-bold text-gray-500">
                 <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition">Terms of Service</a>
+                <a href="#" class="hover:text-white transition">Terms</a>
             </div>
         </div>
     </footer>
@@ -278,7 +322,8 @@
             duration: 800,
             once: true,
             easing: 'ease-out-quart',
-            offset: 100
+            offset: 50,
+            disable: 'mobile' // Opsional: Matikan animasi di HP jika ingin lebih ngebut
         });
     </script>
 </body>
