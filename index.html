@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <title>The Apex Drive | Sewa Mobil Mewah & Supercar VIP Jakarta</title>
-    <meta name="description" content="Pusat sewa mobil mewah & supercar di Jakarta - Tangerang. Porsche 911, Ferrari, Alphard VIP. Layanan lepas kunci atau dengan chauffeur profesional. Booking Mudah.">
-    <meta name="keywords" content="Sewa Supercar Jakarta, Rental Mobil Mewah Tangerang, Sewa Porsche 911, Wedding Car Luxury, The Apex Drive, Rental Alphard VIP">
+    <meta name="description" content="Pusat sewa mobil mewah & supercar di Jakarta - Tangerang. Ferrari, Alphard VIP, Rubicon. Layanan lepas kunci atau dengan chauffeur profesional. Booking Mudah.">
+    <meta name="keywords" content="Sewa Supercar Jakarta, Rental Mobil Mewah Tangerang, Sewa Ferrari Jakarta, Wedding Car Luxury, The Apex Drive, Rental Alphard VIP">
     <meta name="author" content="Ciledug Promo Automotive">
     <meta name="robots" content="index, follow">
     
@@ -15,7 +15,7 @@
     
     <meta property="og:title" content="The Apex Drive - Drive The Impossible">
     <meta property="og:description" content="Sewa Supercar & Luxury Car Terbaik. Rasakan sensasi berkendara para Sultan.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1580273916550-e323be2ebcc3?q=80&w=1200">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=1200">
     <meta property="og:url" content="https://the-apex-drive-car.vercel.app/">
     <meta property="og:type" content="website">
 
@@ -24,7 +24,7 @@
       "@context": "https://schema.org",
       "@type": "AutoRental",
       "name": "The Apex Drive",
-      "image": "https://images.unsplash.com/photo-1580273916550-e323be2ebcc3?q=80&w=1200",
+      "image": "https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=1200",
       "description": "Layanan sewa mobil mewah dan supercar VIP di Jakarta dan Tangerang.",
       "address": {
         "@type": "PostalAddress",
@@ -120,7 +120,6 @@
                     <label class="block text-xs font-bold text-gray-400 mb-1 ml-1">UNIT PILIHAN</label>
                     <select id="unit" class="input-field w-full rounded-xl px-4 py-3 text-sm font-bold text-yellow-500">
                         <option value="General Request">Pilih Manual...</option>
-                        <option value="Porsche 911 GT3">Porsche 911 GT3</option>
                         <option value="Ferrari 488 Pista">Ferrari 488 Pista</option>
                         <option value="Alphard VIP">Alphard VIP Transformer</option>
                         <option value="Jeep Rubicon">Jeep Rubicon Wrangler</option>
@@ -210,23 +209,6 @@
         <div class="swiper mySwiper w-full px-4 md:px-0 relative z-10">
             <div class="swiper-wrapper pb-16">
                 
-                <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('Porsche 911 GT3')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[500px] transition-transform duration-500">
-                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ebcc3?q=80&w=800" 
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" 
-                             alt="Porsche 911 GT3 Black">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6">
-                            <span class="bg-yellow-500 text-black text-[10px] font-bold px-3 py-1 rounded-full mb-3 inline-block tracking-widest">LEGENDARY</span>
-                            <h3 class="text-3xl font-bold mb-1 italic text-white group-hover:text-yellow-400 transition">Porsche 911 GT3</h3>
-                            <div class="flex justify-between items-end border-t border-white/20 pt-4 mt-2">
-                                <p class="text-gray-300 text-xs uppercase tracking-widest">3.4s (0-100 km/h)</p>
-                                <span class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-yellow-500 transition"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="swiper-slide h-auto">
                     <div onclick="toggleModal('Alphard VIP')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[500px] transition-transform duration-500">
                         <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=800" 
@@ -331,7 +313,7 @@
             breakpoints: {
                 640: { slidesPerView: 2.2, spaceBetween: 20 },
                 1024: { slidesPerView: 3.2, spaceBetween: 25 },
-                1280: { slidesPerView: 4, spaceBetween: 30 },
+                1280: { slidesPerView: 3, spaceBetween: 30 }, // Adjusted for 3 cars
             },
         });
 
@@ -353,7 +335,6 @@
             const date = document.getElementById('date').value;
             const driver = document.getElementById('driver').value;
             
-            // Format pesan WhatsApp yang rapi
             const text = `*THE APEX DRIVE RESERVATION*%0A%0A👤 *Nama:* ${name}%0A🚘 *Unit:* ${unit}%0A📅 *Tanggal:* ${date}%0A⚙️ *Opsi:* ${driver}%0A%0AMohon konfirmasi ketersediaan unit. Terima kasih.`;
             
             window.open(`https://wa.me/6285283212205?text=${text}`, '_blank');
