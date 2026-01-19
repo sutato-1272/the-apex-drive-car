@@ -2,14 +2,70 @@
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>The Apex Drive | Sewa Mobil Mewah & Sport Car Premium</title>
-    <meta name="description" content="Sewa mobil sport & luxury car terbaik. Porsche, Ferrari, Alphard, Rubicon. Booking mudah via WhatsApp.">
+    <title>The Apex Drive | Sewa Mobil Mewah & Supercar VIP Jakarta</title>
+    <meta name="description" content="Pusat sewa mobil mewah & supercar di Jakarta - Tangerang. Porsche, Ferrari, Alphard VIP. Layanan lepas kunci atau dengan chauffeur profesional. Booking Mudah.">
+    <meta name="keywords" content="Sewa Supercar Jakarta, Rental Mobil Mewah Tangerang, Sewa Porsche 911, Wedding Car Luxury, The Apex Drive, Rental Alphard VIP">
+    <meta name="author" content="Ciledug Promo Automotive">
+    <meta name="robots" content="index, follow">
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏎️</text></svg>">
+    <link rel="canonical" href="https://the-apex-drive-car.vercel.app/">
+    
+    <meta property="og:title" content="The Apex Drive - Drive The Impossible">
+    <meta property="og:description" content="Sewa Supercar & Luxury Car Terbaik. Rasakan sensasi berkendara para Sultan.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1200">
+    
+    <meta property="og:url" content="https://the-apex-drive-car.vercel.app/">
+    <meta property="og:type" content="website">
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRental",
+      "name": "The Apex Drive",
+      "image": "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1200",
+      "description": "Layanan sewa mobil mewah dan supercar VIP di Jakarta dan Tangerang.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tangerang",
+        "addressRegion": "Banten"
+      },
+      "priceRange": "$$$$",
+      "telephone": "+6285283212205",
+      
+      "url": "https://the-apex-drive-car.vercel.app/"
+    }
+    </script>
+
+    <meta name="google-site-verification" content="PASTE_KODE_GSC_DISINI" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONTOH_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-CONTOH_ID'); 
+      gtag('config', 'G-CONTOH_ID'); 
+    </script>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'MASUKAN_ID_PIXEL_DISINI');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=MASUKAN_ID_PIXEL_DISINI&ev=PageView&noscript=1"
+    /></noscript>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏎️</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,51 +75,58 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030303; color: #ffffff; overflow-x: hidden; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; color: #ffffff; overflow-x: hidden; }
         h1, h2, h3, h4, .brand-font { font-family: 'Space Grotesk', sans-serif; }
 
-        /* TYPOGRAPHY GOLD EFFECT (BOOSTED) */
+        /* GOLD GLOW EFFECTS */
+        :root { --gold: #FBBF24; --gold-dark: #D97706; }
+        
         .text-outline {
             -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
             color: transparent;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.5s ease;
         }
-        /* Saat parent group di-hover, efek emas menyala */
         .group:hover .text-outline {
-            -webkit-text-stroke: 2px #FBBF24; /* Outline Emas Lebih Tebal */
-            color: rgba(251, 191, 36, 0.1); /* Isi sedikit warna emas transparan */
-            filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.6)); /* EFEK GLOW EMAS */
-            letter-spacing: 0.05em; /* Sedikit melebar agar dramatis */
+            -webkit-text-stroke: 0px;
+            color: var(--gold);
+            text-shadow: 0 0 30px rgba(251, 191, 36, 0.8);
         }
 
+        /* GLASSMOPHISM VIP */
         .glass-panel {
             background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        .glass-panel:hover {
+            border-color: var(--gold);
+            box-shadow: 0 0 30px rgba(251, 191, 36, 0.2);
         }
 
         .glass-modal {
             background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--gold);
         }
 
         .input-field {
             background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: white; transition: all 0.3s;
         }
-        .input-field:focus { outline: none; border-color: #FBBF24; background: rgba(255, 255, 255, 0.1); }
+        .input-field:focus { outline: none; border-color: var(--gold); background: rgba(255, 255, 255, 0.1); box-shadow: 0 0 15px rgba(251, 191, 36, 0.3); }
 
+        /* NOISE TEXTURE FOR CINEMATIC FEEL */
         .bg-noise {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 50; opacity: 0.04;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 50; opacity: 0.03;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
         }
 
         .swiper-pagination-bullet { background: white; opacity: 0.5; }
-        .swiper-pagination-bullet-active { background: #EAB308; opacity: 1; }
+        .swiper-pagination-bullet-active { background: var(--gold); opacity: 1; transform: scale(1.2); }
         
-        .map-container iframe { filter: grayscale(100%) invert(92%) contrast(83%); border-radius: 1rem; }
+        /* DARK MODE MAP FILTER */
+        .map-filter iframe { filter: invert(90%) hue-rotate(180deg) contrast(1.1); border-radius: 1rem; }
     </style>
 </head>
 <body class="antialiased selection:bg-yellow-500 selection:text-black">
@@ -71,17 +134,17 @@
     <div class="bg-noise"></div>
 
     <div id="bookingModal" class="fixed inset-0 z-[200] hidden flex items-center justify-center p-4">
-        <div class="absolute inset-0 bg-black/90 backdrop-blur-sm" onclick="toggleModal()"></div>
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-md" onclick="toggleModal()"></div>
         <div class="glass-modal relative w-full max-w-md rounded-2xl p-6 md:p-8 shadow-2xl transform transition-all scale-100 opacity-100" data-aos="zoom-in">
             <button onclick="toggleModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition"><i class="fa-solid fa-xmark text-2xl"></i></button>
             <div class="text-center mb-6">
-                <h3 class="text-2xl font-black brand-font mb-1">RESERVASI UNIT</h3>
-                <p class="text-xs text-yellow-500 tracking-widest uppercase">The Apex Drive VIP</p>
+                <h3 class="text-3xl font-black brand-font mb-1 text-white">RESERVASI <span class="text-yellow-500">VIP</span></h3>
+                <p class="text-[10px] text-gray-400 tracking-[0.3em] uppercase">The Apex Drive System</p>
             </div>
             <form onsubmit="sendToWhatsapp(event)" class="space-y-4">
                 <div>
                     <label class="block text-xs font-bold text-gray-400 mb-1 ml-1">NAMA LENGKAP</label>
-                    <input type="text" id="name" required class="input-field w-full rounded-xl px-4 py-3 text-sm" placeholder="Nama Anda">
+                    <input type="text" id="name" required class="input-field w-full rounded-xl px-4 py-3 text-sm" placeholder="Masukkan Nama">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-gray-400 mb-1 ml-1">UNIT PILIHAN</label>
@@ -106,8 +169,8 @@
                         </select>
                     </div>
                 </div>
-                <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2 mt-4">
-                    <span>Booking via WhatsApp</span>
+                <button type="submit" class="w-full bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-500 hover:to-yellow-300 text-black font-black py-4 rounded-xl transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2 mt-6 shadow-[0_0_20px_rgba(251,191,36,0.4)]">
+                    <span>BOOKING VIA WHATSAPP</span>
                     <i class="fa-brands fa-whatsapp text-xl"></i>
                 </button>
             </form>
@@ -115,127 +178,127 @@
     </div>
 
     <a href="https://wa.me/6285283212205?text=Halo%20Admin,%20mau%20tanya%20pricelist." class="fixed bottom-6 right-6 z-[100] group flex items-center justify-end">
-        <div class="bg-green-500 hover:bg-green-400 text-white rounded-full p-4 shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all duration-300 transform hover:scale-110 flex items-center justify-center">
-            <i class="fa-brands fa-whatsapp text-3xl animate-pulse"></i>
+        <div class="bg-[#25d366] text-white rounded-full p-4 shadow-[0_0_30px_rgba(37,211,102,0.6)] transition-all duration-300 transform hover:scale-110 flex items-center justify-center animate-bounce">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
         </div>
     </a>
 
     <nav class="fixed w-full z-40 top-0 start-0 border-b border-white/5 bg-black/80 backdrop-blur-xl">
         <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-8">
             <a href="#" class="flex items-center gap-2">
-                <span class="text-2xl font-black tracking-tighter text-white brand-font">APEX<span class="text-yellow-500">.</span>DRIVE</span>
+                <span class="text-2xl font-black tracking-tighter text-white brand-font italic">APEX<span class="text-yellow-500">.</span>DRIVE</span>
             </a>
-            <button onclick="toggleModal('General Request')" class="text-black bg-white hover:bg-yellow-400 font-bold rounded-full text-sm px-6 py-2.5 transition-all shadow-lg">
-                Reservasi
+            <button onclick="toggleModal('General Request')" class="text-black bg-white hover:bg-yellow-400 font-bold rounded-full text-xs px-6 py-2.5 transition-all shadow-lg uppercase tracking-widest">
+                Start Engine
             </button>
         </div>
     </nav>
 
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div class="absolute inset-0 z-0 bg-[#0a0a0a]">
-            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1920&auto=format&fit=crop" 
-                 class="w-full h-full object-cover object-[70%] md:object-center opacity-50 scale-105" 
-                 alt="Luxury Car"
-                 onerror="this.src='https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1920'">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/70 to-transparent"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-[#030303] via-transparent to-[#030303]"></div>
+            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1920" 
+                 class="w-full h-full object-cover object-[70%] md:object-center opacity-60 scale-105" 
+                 alt="Luxury Car Background">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#050505] via-transparent to-[#050505]"></div>
         </div>
         
         <div class="relative z-10 text-center max-w-7xl mx-auto px-4 mt-10 md:mt-0 group">
+            <div class="inline-block mb-4 px-4 py-1 rounded-full border border-yellow-500/30 bg-yellow-500/10 backdrop-blur-md" data-aos="fade-down">
+                <span class="text-yellow-500 text-[10px] font-bold tracking-[0.3em] uppercase">Premium Fleet Access</span>
+            </div>
             <h1 class="text-[3.5rem] md:text-[9rem] font-black uppercase tracking-tighter leading-[0.9] mb-6 mix-blend-screen" data-aos="fade-up">
-                Drive The <br>
-                <span class="text-outline">Impossible</span>
+                DRIVE THE <br>
+                <span class="text-outline">IMPOSSIBLE</span>
             </h1>
-            <p class="text-base md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light px-4" data-aos="fade-up" data-aos-delay="200">
-                Pusat sewa <span class="text-white font-medium">Supercar & Luxury MPV</span> terpercaya. 
-                Unit bersih, wangi, dan driver berstandar protokol VIP.
+            <p class="text-base md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light px-4 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                Rasakan sensasi berkendara <span class="text-yellow-500 font-bold">Supercar & Luxury Car</span> tanpa batas. 
+                Unit bersih, wangi, dan privasi terjamin.
             </p>
-            <div class="flex justify-center" data-aos="fade-up" data-aos-delay="300">
-                <a href="#katalog" class="px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg rounded-full transition-all hover:scale-105 shadow-[0_0_20px_rgba(234,179,8,0.4)]">
-                    Lihat 4 Unit Terbaik
+            <div class="flex justify-center gap-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="#katalog" class="px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-sm uppercase tracking-widest rounded-full transition-all hover:scale-105 shadow-[0_0_30px_rgba(234,179,8,0.5)]">
+                    Explore Garage
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="katalog" class="py-20 bg-[#030303] overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 mb-10 flex justify-between items-end">
+    <section id="katalog" class="py-24 bg-[#050505] overflow-hidden relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-yellow-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 mb-12 flex justify-between items-end relative z-10">
             <div>
-                <h2 class="text-3xl md:text-5xl font-black text-white mb-2">TOP FLEET</h2>
-                <p class="text-gray-400 text-sm md:text-base">Koleksi Pilihan Kami (Swipe →)</p>
+                <h2 class="text-4xl md:text-6xl font-black text-white mb-2 italic">THE <span class="text-yellow-500">FLEET</span></h2>
+                <p class="text-gray-400 text-sm md:text-base tracking-widest uppercase">Pilih Kendaraan Anda (Swipe →)</p>
             </div>
-            <div class="hidden md:flex gap-2">
-                <button class="swiper-button-prev-custom w-12 h-12 rounded-full border border-white/20 hover:bg-yellow-500 hover:text-black flex items-center justify-center transition"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="swiper-button-next-custom w-12 h-12 rounded-full border border-white/20 hover:bg-yellow-500 hover:text-black flex items-center justify-center transition"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="hidden md:flex gap-3">
+                <button class="swiper-button-prev-custom w-12 h-12 rounded-full border border-white/20 hover:bg-yellow-500 hover:border-yellow-500 hover:text-black flex items-center justify-center transition"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="swiper-button-next-custom w-12 h-12 rounded-full border border-white/20 hover:bg-yellow-500 hover:border-yellow-500 hover:text-black flex items-center justify-center transition"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
 
-        <div class="swiper mySwiper w-full px-4 md:px-0">
-            <div class="swiper-wrapper pb-12">
+        <div class="swiper mySwiper w-full px-4 md:px-0 relative z-10">
+            <div class="swiper-wrapper pb-16">
                 
                 <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('Porsche 911 GT3')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50 bg-[#0a0a0a]">
-                        <img src="https://images.unsplash.com/photo-1503376763036-066120622c74?q=80&w=800&auto=format&fit=crop" 
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70"
-                             onerror="this.src='https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=800'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div onclick="toggleModal('Porsche 911 GT3')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[500px] transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1503376763036-066120622c74?q=80&w=800" 
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" alt="Porsche 911">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
-                            <span class="bg-yellow-500 text-black text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">BEST SELLER</span>
-                            <h3 class="text-2xl font-bold mb-1">Porsche 911 GT3</h3>
-                            <div class="flex justify-between items-end">
-                                <p class="text-gray-400 text-xs">Sport • 2 Seater • 500HP</p>
-                                <span class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
+                            <span class="bg-yellow-500 text-black text-[10px] font-bold px-3 py-1 rounded-full mb-3 inline-block tracking-widest">LEGENDARY</span>
+                            <h3 class="text-3xl font-bold mb-1 italic text-white group-hover:text-yellow-400 transition">Porsche 911 GT3</h3>
+                            <div class="flex justify-between items-end border-t border-white/20 pt-4 mt-2">
+                                <p class="text-gray-300 text-xs uppercase tracking-widest">3.4s (0-100 km/h)</p>
+                                <span class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-yellow-500 transition"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('Alphard VIP')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50 bg-[#0a0a0a]">
-                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=800&auto=format&fit=crop" 
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70"
-                             onerror="this.src='https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=800'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div onclick="toggleModal('Alphard VIP')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[500px] transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=800" 
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" alt="Alphard VIP">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
-                            <span class="bg-blue-500 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">VIP CHOICE</span>
-                            <h3 class="text-2xl font-bold mb-1">Alphard VIP</h3>
-                            <div class="flex justify-between items-end">
-                                <p class="text-gray-400 text-xs">Pilot Seat • Massage • Netflix</p>
-                                <span class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
+                            <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-3 inline-block tracking-widest">VIP COMFORT</span>
+                            <h3 class="text-3xl font-bold mb-1 italic text-white group-hover:text-blue-400 transition">Alphard VIP</h3>
+                            <div class="flex justify-between items-end border-t border-white/20 pt-4 mt-2">
+                                <p class="text-gray-300 text-xs uppercase tracking-widest">Massage Pilot Seat</p>
+                                <span class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-blue-500 group-hover:text-white transition"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('Jeep Rubicon')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50 bg-[#0a0a0a]">
-                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop" 
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70"
-                             onerror="this.src='https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=800'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div onclick="toggleModal('Jeep Rubicon')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[500px] transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800" 
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" alt="Jeep Rubicon">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
-                            <span class="bg-green-600 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">ADVENTURE</span>
-                            <h3 class="text-2xl font-bold mb-1">Jeep Rubicon</h3>
-                            <div class="flex justify-between items-end">
-                                <p class="text-gray-400 text-xs">Offroad • 4x4 • Convertible</p>
-                                <span class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
+                            <span class="bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-3 inline-block tracking-widest">OFFROAD KING</span>
+                            <h3 class="text-3xl font-bold mb-1 italic text-white group-hover:text-green-400 transition">Jeep Rubicon</h3>
+                            <div class="flex justify-between items-end border-t border-white/20 pt-4 mt-2">
+                                <p class="text-gray-300 text-xs uppercase tracking-widest">4x4 • Convertible</p>
+                                <span class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="swiper-slide h-auto">
-                    <div onclick="toggleModal('Ferrari 488 Pista')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[450px] transition-transform duration-300 hover:border-yellow-500/50 bg-[#0a0a0a]">
-                        <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=800&auto=format&fit=crop" 
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70"
-                             onerror="this.src='https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=800'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div onclick="toggleModal('Ferrari 488 Pista')" class="glass-panel rounded-3xl overflow-hidden relative group cursor-pointer h-[400px] md:h-[500px] transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=800" 
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" alt="Ferrari 488">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
-                            <span class="bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">SUPERCAR</span>
-                            <h3 class="text-2xl font-bold mb-1">Ferrari 488</h3>
-                            <div class="flex justify-between items-end">
-                                <p class="text-gray-400 text-xs">V8 Turbo • Red Corsa • Fast</p>
-                                <span class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
+                            <span class="bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-3 inline-block tracking-widest">SPEED DEMON</span>
+                            <h3 class="text-3xl font-bold mb-1 italic text-white group-hover:text-red-500 transition">Ferrari 488</h3>
+                            <div class="flex justify-between items-end border-t border-white/20 pt-4 mt-2">
+                                <p class="text-gray-300 text-xs uppercase tracking-widest">V8 Turbo • 710HP</p>
+                                <span class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-red-600 group-hover:text-white transition"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
                             </div>
                         </div>
                     </div>
@@ -249,40 +312,48 @@
     <footer class="bg-black border-t border-white/10 pt-20 pb-10">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
-                <h2 class="text-4xl font-black mb-6 tracking-tighter">APEX<span class="text-yellow-500">.</span>DRIVE</h2>
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3 text-gray-300">
-                        <i class="fa-solid fa-location-dot text-yellow-500 w-6"></i>
-                        <span class="text-sm">Ciledug Raya, Tangerang</span>
+                <h2 class="text-4xl font-black mb-6 tracking-tighter italic">APEX<span class="text-yellow-500">.</span>DRIVE</h2>
+                <p class="text-gray-400 mb-8 max-w-sm">
+                    Penyedia layanan transportasi premium nomor satu. Keamanan, kenyamanan, dan prestise adalah prioritas kami.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 text-gray-300 group">
+                        <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-yellow-500 group-hover:text-black transition">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="text-sm font-bold tracking-wide">Ciledug Raya, Tangerang - Banten</span>
                     </div>
-                    <div class="flex items-center gap-3 text-gray-300">
-                        <i class="fa-solid fa-phone text-yellow-500 w-6"></i>
-                        <span class="text-sm">+62 852-8321-2205 (24 Jam)</span>
+                    <div class="flex items-center gap-4 text-gray-300 group">
+                        <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-yellow-500 group-hover:text-black transition">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span class="text-sm font-bold tracking-wide">+62 852-8321-2205 (VIP Support)</span>
                     </div>
                 </div>
             </div>
-            <div class="h-64 w-full rounded-2xl overflow-hidden glass-panel p-1">
-                <div class="map-container h-full w-full bg-gray-800 rounded-xl overflow-hidden relative">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.331289659039!2d106.7360256!3d-6.2200154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fa02b5455555%3A0x7777777777777777!2sCiledug!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid" 
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+            
+            <div class="h-64 w-full rounded-2xl overflow-hidden glass-panel p-2 map-filter">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.716909516854!2d106.704859!3d-6.24009405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ed343af45fc195%3A0x98e5b8eaad8e2564!2sCiledugPromo.biz.id%20%7C%20Layanan%20Bisnis%20%26%20Pemasaran!5e0!3m2!1sid!2sid!4v1768642599691!5m2!1sid!2sid" 
+                    width="100%" height="100%" style="border:0;" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
-        <div class="border-t border-white/5 pt-8 text-center text-gray-600 text-sm">
-            <p>© 2026 The Apex Drive. Powered by <a href="#" class="text-gray-500 hover:text-white transition">CiledugPromo Network</a>.</p>
+        <div class="border-t border-white/5 pt-8 text-center text-gray-600 text-[10px] tracking-[0.2em] uppercase">
+            <p>© 2026 The Apex Drive. Protocol Hybrid Active.</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        AOS.init({ duration: 800, once: true, offset: 50, disable: 'mobile' });
+        AOS.init({ duration: 1000, once: true, offset: 50 });
 
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1.1, // Tampilan HP: 1 Mobil Full + Intip dikit
+            slidesPerView: 1.1,
             spaceBetween: 15,
             centeredSlides: false,
-            loop: false, // Loop dimatikan agar 4 unit terlihat eksklusif
             grabCursor: true,
             pagination: { el: ".swiper-pagination", clickable: true },
             navigation: { nextEl: ".swiper-button-next-custom", prevEl: ".swiper-button-prev-custom" },
@@ -299,10 +370,8 @@
             
             if (modal.classList.contains('hidden')) {
                 modal.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
             } else {
                 modal.classList.add('hidden');
-                document.body.style.overflow = 'auto';
             }
         }
 
@@ -312,7 +381,10 @@
             const unit = document.getElementById('unit').value;
             const date = document.getElementById('date').value;
             const driver = document.getElementById('driver').value;
-            const text = `Halo Admin *The Apex Drive*,%0A%0ASaya ingin booking:%0A👤 Nama: *${name}*%0A🚘 Unit: *${unit}*%0A📅 Tanggal: *${date}*%0A⚙️ Opsi: *${driver}*%0A%0AMohon info ketersediaan.`;
+            
+            // Format pesan WhatsApp yang rapi
+            const text = `*THE APEX DRIVE RESERVATION*%0A%0A👤 *Nama:* ${name}%0A🚘 *Unit:* ${unit}%0A📅 *Tanggal:* ${date}%0A⚙️ *Opsi:* ${driver}%0A%0AMohon konfirmasi ketersediaan unit. Terima kasih.`;
+            
             window.open(`https://wa.me/6285283212205?text=${text}`, '_blank');
         }
     </script>
